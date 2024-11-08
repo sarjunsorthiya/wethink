@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Advisory Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px; ">
+            <img src="logo.avif" alt="WeThink">
+            <h1 style="font-size: 20px; font-weight: bold;">WeThink</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="/contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+    
+        <div class="hero-content">
+            <h1>Smart Financial Solutions for a Better Tomorrow</h1>
+                <p>Empowering your financial journey with expert guidance and innovative investment solutions.</p>
+        </div>
+        <div class="stats">
+            <div class="stat-box">
+                <h2>5,000+</h2>
+                <p>Crore AUM</p>
+            </div>
+            <div class="stat-box">
+                <h2>8+</h2>
+    
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-box">
+                <h2>5,500+</h2>
+    
+                <p>Clients</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2>Services we provide</h2>
+        <div class="service-rows">
+            <div class="service-row">
+                
+                
+                <div class="service-content">
+                    <h3>Portfolio Management</h3>
+                    <p>Affordable, scalable, customized discretionary PMS built on the foundations of value investing.</p>
+                    <a href="contact.html" class="learn-more">Learn More →</a>
+                </div>
+
+
+                <div class="service-image">
+                    <img src="portfolio.webp" alt="Portfolio Management">
+                </div>
+            </div>
+            <div class="service-row reverse">
+                <div class="service-image">
+                    <img src="finplan.jpg" alt="Financial Planning">
+                </div>
+                <div class="service-content">
+                    <h3>Financial Planning</h3>
+                    <p>Customized long-term financial planning services that cover insurance, debt management, tax planning and asset allocation.</p>
+                    <a href="contact.html" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="calculators" id="calculators">
+    <h2>Financial Calculators</h2>
+    <div class="calculator-container">
+        <!-- Loan Calculator -->
+        <div class="calculator-box">
+            <h3>Loan Calculator</h3>
+            <div class="calculator-form">
+                            <div class="input-group">
+                                <label for="loanAmount">Loan Amount (₹)</label>
+                                <input type="number" id="loanAmount" placeholder="Enter loan amount">
+                            </div>
+                <div class="input-group">
+                    <label for="loanInterest">Interest Rate (%)</label>
+                    <input type="number" id="loanInterest" placeholder="Enter interest rate">
+                </div>
+                <div class="input-group">
+                    <label for="loanTerm">Loan Term (Years)</label>
+                    <input type="number" id="loanTerm" placeholder="Enter loan term">
+                </div>
+                <button onclick="calculateLoan()">Calculate EMI</button>
+                            <div class="result" id="loanResult">
+                                <p>Monthly EMI: <span id="emiAmount">₹0</span></p>
+                                <p>Total Payment: <span id="totalPayment">₹0</span></p>
+                                <p>Total Interest: <span id="totalInterest">₹0</span></p>
+                            </div>
+            </div>
+        </div>
+
+        <div class="calculator-box">
+            <h3>Interest Calculator</h3>
+            <div class="calculator-form">
+                <div class="input-group">
+                    <label for="principal">Principal Amount (₹)</label>
+                    <input type="number" id="principal" placeholder="Enter principal amount">
+                </div>
+                        <div class="input-group">
+                            <label for="rate">Interest Rate (%)</label>
+                            <input type="number" id="rate" placeholder="Enter interest rate">
+                        </div>
+                        <div class="input-group">
+                            <label for="time">Time Period (Years)</label>
+                            <input type="number" id="time" placeholder="Enter time period">
+                        </div>
+                <button onclick="calculateInterest()">Calculate Interest</button>
+                <div class="result" id="interestResult">
+                    <p>Simple Interest: <span id="simpleInterest">₹0</span></p>
+                    <p>Total Amount: <span id="totalAmount">₹0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+            <section class="cta-section">
+                <h2>Ready to Start Your Investment Journey?</h2>
+                <p>Get in touch with our experts for a free consultation</p>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </section>
+</body>
+<script src="main.js"></script>
+</html>
